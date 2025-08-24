@@ -13,6 +13,7 @@ def exibir(texto):
 def escolha_area():
     """essa função é responsavel pela escolha do usuario"""
     try:
+        exibir(texto='Calculador de Área')
         print('-----')
         print('Opção')
         print('-----')
