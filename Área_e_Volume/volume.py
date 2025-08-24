@@ -1,5 +1,6 @@
 from math import *
 import os
+import app
 
 def exibir(texto):
     """Essa função é para exibir"""
@@ -12,8 +13,8 @@ def escolha_volume():
     """essa função é responsavel pela escolha do usuario"""
     try:
         print('------')
-        print('Opição')
-        print('------')
+        print('Opção')
+        print('-----')
         escolha_tipo = int(input('escolha 1 para calcular a volume do cubo \n e 2 para calcular o volume do paralelepipedo \n e 3 para calcular o volume do cilindro \n e 4 para calcular o volume do cone \n e 5 para calcular o volume da esfera \n 6 para sair:  '))
 
         if escolha_tipo == 1:
@@ -27,7 +28,7 @@ def escolha_volume():
         elif escolha_tipo == 5:
             esfera()
         elif escolha_tipo == 6:
-         fechar()
+            voltar()
 
         else:
          escolha_volume()
@@ -57,7 +58,7 @@ def cilindro():
    raio = float(input('Qual o raio do cilindro: '))
    altura = float(input('Qual a altura do cilindro: '))
    volume = pi * pow(raio, 2) * altura
-   print(f'O volume do cilindro é {volume}³')
+   print(f'O volume do cilindro é {volume:.2f}³')
    sair()
 
 def cone():
@@ -85,3 +86,8 @@ def fechar():
     """Essa função é para fechar o programa"""
     exibir(texto='Fechar programa')
     input('Digite algo para fechar o programa: ')
+
+def voltar():
+    input('Digite algo para voltar: ')
+    os.system('cls')
+    app.escolha()

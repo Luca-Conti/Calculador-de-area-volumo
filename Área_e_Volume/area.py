@@ -1,6 +1,8 @@
 """Esse arquivo é para calcular a área"""
 from math import *
 import os
+import app
+
 def exibir(texto):
     """Essa função é para exibir"""
     os.system('cls')
@@ -11,10 +13,10 @@ def exibir(texto):
 def escolha_area():
     """essa função é responsavel pela escolha do usuario"""
     try:
-        print('------')
-        print('Opição')
-        print('------')
-        escolha_tipo = int(input('escolha 1 para calcular a área do circulo \n e 2 para calcular a área do trapezio \n e 3 para calcular a área do quadrado \n e 4 para calcular a área do retangulo\n e 5 para calcular a área do triângulo\n e 6 para calcular a área do losangulo \n e 6 para sair:  '))
+        print('-----')
+        print('Opção')
+        print('-----')
+        escolha_tipo = int(input('escolha 1 para calcular a área do circulo \n e 2 para calcular a área do trapezio \n e 3 para calcular a área do quadrado \n e 4 para calcular a área do retangulo\n e 5 para calcular a área do triângulo\n e 6 para calcular a área do losangulo \n e 7 para voltar:  '))
 
         if escolha_tipo == 1:
             circulo()
@@ -33,7 +35,7 @@ def escolha_area():
         elif escolha_tipo == 6:
             losangulo()
         elif escolha_tipo == 7:
-         fechar()
+         voltar()
 
         else:
          escolha_area()
@@ -98,3 +100,7 @@ def fechar():
     exibir(texto='Fechar programa')
     input('Digite algo para fechar o programa: ')
 
+def voltar():
+    input('Digite algo para voltar: ')
+    os.system('cls')
+    app.escolha()
