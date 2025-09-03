@@ -46,7 +46,7 @@ python main.py
 ## Tecnologias Utilizadas
 
 - Linguagem principal: **Python**
-- [Adicione outras bibliotecas ou frameworks utilizados, se houver]
+- [Math e talvez flet]
 
 ## Estrutura do Projeto
 
@@ -78,3 +78,4 @@ Caso queira utilizar o código, entre em contato para obter permissão.
 
 Feito com 💡 por [Luca Conti](https://github.com/Luca-Conti)  
 email [lucagopro12@gmail.com]
+
